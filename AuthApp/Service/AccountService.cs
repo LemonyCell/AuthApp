@@ -40,5 +40,30 @@ namespace AuthApp.Service
             serviceResult.Success = true;
             return serviceResult;
         }
+
+        public ServiceResult<ApplicationUser> Login(AuthBindingModel model)
+        {
+            var serviceResult = new ServiceResult<ApplicationUser>();
+            //check
+            foreach (var user in DATA.ApplicationUsers)
+            {
+                if (user.Login == model.Login)
+                {
+                    if (user.Password == model.Password)
+                    {
+                        var instanse = Singleton.getInstance();
+                        instanse.User = user;
+                        serviceResult.Result = user;
+                        serviceResult.Success = true;
+                    }
+                    else
+                    {
+                        serviceResult.Error.ErrorCode = 405;
+                        serviceResult.Error.ErrorDescription = "Wrong password";
+                    }
+                }
+            }
+            return serviceResult;
+        }
     }
 }

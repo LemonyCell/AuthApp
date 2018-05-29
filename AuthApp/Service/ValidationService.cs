@@ -37,5 +37,29 @@ namespace AuthApp.Service
             return isFilled;
         }
 
+        public ServiceResult<ApplicationUser> Validation(AuthBindingModel model)
+        {
+            var serviceResult = new ServiceResult<ApplicationUser>();
+
+            // чи заповнені всі поля
+            if (IsFilled(model))
+            {
+                serviceResult.Error.ErrorCode = 400;
+                serviceResult.Error.ErrorDescription = "Not all fields are filled";
+                return serviceResult;
+            }
+            serviceResult.Success = true;
+            return serviceResult;
+        }
+        // true якщо поля пусті
+        bool IsFilled(AuthBindingModel model)
+        {
+            bool isFilled = false;
+
+            isFilled = model.Login == "" || model.Password == "";
+
+            return isFilled;
+        }
+
     }
 }

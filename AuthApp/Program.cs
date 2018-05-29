@@ -20,6 +20,7 @@ namespace AuthApp
         {
             var Saver = new Saver();
             DATA.ApplicationUsers = Saver.Deserialize();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start());

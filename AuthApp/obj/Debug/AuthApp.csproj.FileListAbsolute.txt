@@ -29,3 +29,4 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.csproj.CopyComplete
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.exe
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.pdb
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.View.HomePage.resources
