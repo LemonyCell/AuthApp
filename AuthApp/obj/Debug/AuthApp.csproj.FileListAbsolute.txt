@@ -30,3 +30,7 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.exe
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.pdb
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.View.HomePage.resources
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\Google.Protobuf.dll
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\MySql.Data.dll
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\Google.Protobuf.xml
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\MySql.Data.xml
