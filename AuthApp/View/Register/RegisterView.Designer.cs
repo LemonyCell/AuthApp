@@ -49,6 +49,12 @@
             this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.RegisterGroupBox = new System.Windows.Forms.GroupBox();
             this.RegisterButton = new System.Windows.Forms.Button();
+            this.FirstNameCheckLabel = new System.Windows.Forms.Label();
+            this.LastNameCheckLabel = new System.Windows.Forms.Label();
+            this.LoginCheckLabel = new System.Windows.Forms.Label();
+            this.PasswordCheckLabel = new System.Windows.Forms.Label();
+            this.EmailCheckLabel = new System.Windows.Forms.Label();
+            this.PhoneNumberCheckLabel = new System.Windows.Forms.Label();
             this.RegistrationFlowLayoutPanel.SuspendLayout();
             this.FirstNameGroupBox.SuspendLayout();
             this.LastNameGroupBox.SuspendLayout();
@@ -69,19 +75,21 @@
             this.RegistrationFlowLayoutPanel.Controls.Add(this.EmailGroupBox);
             this.RegistrationFlowLayoutPanel.Controls.Add(this.PhoneNumberGroupBox);
             this.RegistrationFlowLayoutPanel.Controls.Add(this.RegisterGroupBox);
-            this.RegistrationFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.RegistrationFlowLayoutPanel.Location = new System.Drawing.Point(76, 12);
+            this.RegistrationFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.RegistrationFlowLayoutPanel.Location = new System.Drawing.Point(61, 12);
             this.RegistrationFlowLayoutPanel.Name = "RegistrationFlowLayoutPanel";
-            this.RegistrationFlowLayoutPanel.Size = new System.Drawing.Size(637, 623);
+            this.RegistrationFlowLayoutPanel.Size = new System.Drawing.Size(703, 623);
             this.RegistrationFlowLayoutPanel.TabIndex = 2;
+            this.RegistrationFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.RegistrationFlowLayoutPanel_Paint);
             // 
             // FirstNameGroupBox
             // 
+            this.FirstNameGroupBox.Controls.Add(this.FirstNameCheckLabel);
             this.FirstNameGroupBox.Controls.Add(this.FirstNameLabel);
             this.FirstNameGroupBox.Controls.Add(this.FirstNameTextBox);
-            this.FirstNameGroupBox.Location = new System.Drawing.Point(15, 3);
+            this.FirstNameGroupBox.Location = new System.Drawing.Point(3, 3);
             this.FirstNameGroupBox.Name = "FirstNameGroupBox";
-            this.FirstNameGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.FirstNameGroupBox.Size = new System.Drawing.Size(690, 67);
             this.FirstNameGroupBox.TabIndex = 1;
             this.FirstNameGroupBox.TabStop = false;
             // 
@@ -99,17 +107,20 @@
             // 
             this.FirstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FirstNameTextBox.Location = new System.Drawing.Point(222, 16);
+            this.FirstNameTextBox.MaxLength = 25;
             this.FirstNameTextBox.Name = "FirstNameTextBox";
             this.FirstNameTextBox.Size = new System.Drawing.Size(370, 34);
             this.FirstNameTextBox.TabIndex = 5;
+            this.FirstNameTextBox.TextChanged += new System.EventHandler(this.FirstNameTextBox_TextChanged);
             // 
             // LastNameGroupBox
             // 
+            this.LastNameGroupBox.Controls.Add(this.LastNameCheckLabel);
             this.LastNameGroupBox.Controls.Add(this.LastNameLabel);
             this.LastNameGroupBox.Controls.Add(this.LastNameTextBox);
-            this.LastNameGroupBox.Location = new System.Drawing.Point(15, 76);
+            this.LastNameGroupBox.Location = new System.Drawing.Point(3, 76);
             this.LastNameGroupBox.Name = "LastNameGroupBox";
-            this.LastNameGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.LastNameGroupBox.Size = new System.Drawing.Size(690, 67);
             this.LastNameGroupBox.TabIndex = 2;
             this.LastNameGroupBox.TabStop = false;
             // 
@@ -127,17 +138,20 @@
             // 
             this.LastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LastNameTextBox.Location = new System.Drawing.Point(222, 16);
+            this.LastNameTextBox.MaxLength = 25;
             this.LastNameTextBox.Name = "LastNameTextBox";
             this.LastNameTextBox.Size = new System.Drawing.Size(370, 34);
             this.LastNameTextBox.TabIndex = 5;
+            this.LastNameTextBox.TextChanged += new System.EventHandler(this.LastNameTextBox_TextChanged);
             // 
             // UsernameGroupBox
             // 
+            this.UsernameGroupBox.Controls.Add(this.LoginCheckLabel);
             this.UsernameGroupBox.Controls.Add(this.LoginLabel);
             this.UsernameGroupBox.Controls.Add(this.LoginTextBox);
-            this.UsernameGroupBox.Location = new System.Drawing.Point(15, 149);
+            this.UsernameGroupBox.Location = new System.Drawing.Point(3, 149);
             this.UsernameGroupBox.Name = "UsernameGroupBox";
-            this.UsernameGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.UsernameGroupBox.Size = new System.Drawing.Size(690, 67);
             this.UsernameGroupBox.TabIndex = 16;
             this.UsernameGroupBox.TabStop = false;
             // 
@@ -158,14 +172,16 @@
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(370, 34);
             this.LoginTextBox.TabIndex = 5;
+            this.LoginTextBox.TextChanged += new System.EventHandler(this.LoginTextBox_TextChanged);
             // 
             // PasswordGroupBox
             // 
+            this.PasswordGroupBox.Controls.Add(this.PasswordCheckLabel);
             this.PasswordGroupBox.Controls.Add(this.PasswordLabel);
             this.PasswordGroupBox.Controls.Add(this.PasswordTextBox);
-            this.PasswordGroupBox.Location = new System.Drawing.Point(15, 222);
+            this.PasswordGroupBox.Location = new System.Drawing.Point(3, 222);
             this.PasswordGroupBox.Name = "PasswordGroupBox";
-            this.PasswordGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.PasswordGroupBox.Size = new System.Drawing.Size(690, 67);
             this.PasswordGroupBox.TabIndex = 17;
             this.PasswordGroupBox.TabStop = false;
             // 
@@ -187,14 +203,16 @@
             this.PasswordTextBox.PasswordChar = '%';
             this.PasswordTextBox.Size = new System.Drawing.Size(370, 34);
             this.PasswordTextBox.TabIndex = 5;
+            this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
             // 
             // EmailGroupBox
             // 
+            this.EmailGroupBox.Controls.Add(this.EmailCheckLabel);
             this.EmailGroupBox.Controls.Add(this.EmailLabel);
             this.EmailGroupBox.Controls.Add(this.EmailTextBox);
-            this.EmailGroupBox.Location = new System.Drawing.Point(15, 295);
+            this.EmailGroupBox.Location = new System.Drawing.Point(3, 295);
             this.EmailGroupBox.Name = "EmailGroupBox";
-            this.EmailGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.EmailGroupBox.Size = new System.Drawing.Size(690, 67);
             this.EmailGroupBox.TabIndex = 18;
             this.EmailGroupBox.TabStop = false;
             // 
@@ -212,17 +230,20 @@
             // 
             this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EmailTextBox.Location = new System.Drawing.Point(222, 16);
+            this.EmailTextBox.MaxLength = 25;
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(370, 34);
             this.EmailTextBox.TabIndex = 5;
+            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // PhoneNumberGroupBox
             // 
+            this.PhoneNumberGroupBox.Controls.Add(this.PhoneNumberCheckLabel);
             this.PhoneNumberGroupBox.Controls.Add(this.PhoneNumberLabel);
             this.PhoneNumberGroupBox.Controls.Add(this.PhoneNumberTextBox);
-            this.PhoneNumberGroupBox.Location = new System.Drawing.Point(15, 368);
+            this.PhoneNumberGroupBox.Location = new System.Drawing.Point(3, 368);
             this.PhoneNumberGroupBox.Name = "PhoneNumberGroupBox";
-            this.PhoneNumberGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.PhoneNumberGroupBox.Size = new System.Drawing.Size(690, 67);
             this.PhoneNumberGroupBox.TabIndex = 19;
             this.PhoneNumberGroupBox.TabStop = false;
             // 
@@ -238,18 +259,21 @@
             // 
             // PhoneNumberTextBox
             // 
+            this.PhoneNumberTextBox.AccessibleName = "";
             this.PhoneNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneNumberTextBox.Location = new System.Drawing.Point(222, 11);
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(222, 17);
+            this.PhoneNumberTextBox.MaxLength = 12;
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
             this.PhoneNumberTextBox.Size = new System.Drawing.Size(370, 34);
             this.PhoneNumberTextBox.TabIndex = 5;
+            this.PhoneNumberTextBox.TextChanged += new System.EventHandler(this.PhoneNumberTextBox_TextChanged);
             // 
             // RegisterGroupBox
             // 
             this.RegisterGroupBox.Controls.Add(this.RegisterButton);
-            this.RegisterGroupBox.Location = new System.Drawing.Point(15, 441);
+            this.RegisterGroupBox.Location = new System.Drawing.Point(3, 441);
             this.RegisterGroupBox.Name = "RegisterGroupBox";
-            this.RegisterGroupBox.Size = new System.Drawing.Size(619, 67);
+            this.RegisterGroupBox.Size = new System.Drawing.Size(690, 67);
             this.RegisterGroupBox.TabIndex = 25;
             this.RegisterGroupBox.TabStop = false;
             // 
@@ -263,6 +287,60 @@
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
             this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            // 
+            // FirstNameCheckLabel
+            // 
+            this.FirstNameCheckLabel.AutoSize = true;
+            this.FirstNameCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FirstNameCheckLabel.Location = new System.Drawing.Point(599, 19);
+            this.FirstNameCheckLabel.Name = "FirstNameCheckLabel";
+            this.FirstNameCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.FirstNameCheckLabel.TabIndex = 6;
+            // 
+            // LastNameCheckLabel
+            // 
+            this.LastNameCheckLabel.AutoSize = true;
+            this.LastNameCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastNameCheckLabel.Location = new System.Drawing.Point(599, 18);
+            this.LastNameCheckLabel.Name = "LastNameCheckLabel";
+            this.LastNameCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.LastNameCheckLabel.TabIndex = 7;
+            // 
+            // LoginCheckLabel
+            // 
+            this.LoginCheckLabel.AutoSize = true;
+            this.LoginCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginCheckLabel.Location = new System.Drawing.Point(599, 19);
+            this.LoginCheckLabel.Name = "LoginCheckLabel";
+            this.LoginCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.LoginCheckLabel.TabIndex = 7;
+            // 
+            // PasswordCheckLabel
+            // 
+            this.PasswordCheckLabel.AutoSize = true;
+            this.PasswordCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordCheckLabel.Location = new System.Drawing.Point(599, 19);
+            this.PasswordCheckLabel.Name = "PasswordCheckLabel";
+            this.PasswordCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.PasswordCheckLabel.TabIndex = 7;
+            // 
+            // EmailCheckLabel
+            // 
+            this.EmailCheckLabel.AutoSize = true;
+            this.EmailCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EmailCheckLabel.Location = new System.Drawing.Point(599, 19);
+            this.EmailCheckLabel.Name = "EmailCheckLabel";
+            this.EmailCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.EmailCheckLabel.TabIndex = 7;
+            // 
+            // PhoneNumberCheckLabel
+            // 
+            this.PhoneNumberCheckLabel.AutoSize = true;
+            this.PhoneNumberCheckLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PhoneNumberCheckLabel.Location = new System.Drawing.Point(599, 16);
+            this.PhoneNumberCheckLabel.Name = "PhoneNumberCheckLabel";
+            this.PhoneNumberCheckLabel.Size = new System.Drawing.Size(0, 29);
+            this.PhoneNumberCheckLabel.TabIndex = 7;
             // 
             // RegisterView
             // 
@@ -315,5 +393,11 @@
         private System.Windows.Forms.TextBox PhoneNumberTextBox;
         private System.Windows.Forms.GroupBox RegisterGroupBox;
         private System.Windows.Forms.Button RegisterButton;
+        private System.Windows.Forms.Label FirstNameCheckLabel;
+        private System.Windows.Forms.Label LastNameCheckLabel;
+        private System.Windows.Forms.Label LoginCheckLabel;
+        private System.Windows.Forms.Label PasswordCheckLabel;
+        private System.Windows.Forms.Label EmailCheckLabel;
+        private System.Windows.Forms.Label PhoneNumberCheckLabel;
     }
 }
