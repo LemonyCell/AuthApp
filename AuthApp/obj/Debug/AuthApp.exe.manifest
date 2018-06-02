@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AuthApp.exe" size="57312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AuthApp.exe" size="75744">
       <assemblyIdentity name="AuthApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n1kMAJGfsZB1n970yseNwXOAKtyUfKLVdf7yvy5e4EE=</dsig:DigestValue>
+        <dsig:DigestValue>HYNv/EYr3+7KnqqkJ0yBgI2yDI4MJoyoRiAv7yJOHQI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AuthApp.Core123.dll" size="12288">
+      <assemblyIdentity name="AuthApp.Core123" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZBUTOmzd1lmmIED8ntXAQ1kDwgJiDP+j684+NpjLGOQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

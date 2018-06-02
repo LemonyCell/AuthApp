@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using AuthApp.Models.BindingModel;
-using AuthApp.Service;
+using AuthApp.Core.Models.BindingModel;
+using AuthApp.Core.Service;
 
 namespace AuthApp.View.Register
 {

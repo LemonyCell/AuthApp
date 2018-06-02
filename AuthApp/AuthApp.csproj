@@ -90,14 +90,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\BaseEntity.cs" />
-    <Compile Include="Models\BindingModel\AuthBindingModel.cs" />
-    <Compile Include="Models\BindingModel\RegisterBindingModel.cs" />
-    <Compile Include="Models\ServiceResult.cs" />
-    <Compile Include="Service\AccountService.cs" />
-    <Compile Include="Service\ValidationService.cs" />
-    <Compile Include="Singleton.cs" />
     <Compile Include="View\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,12 +154,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\ViewModel\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\1_AccauntPhoto.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
@@ -178,6 +164,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthApp.Core\AuthApp.Core.csproj">
+      <Project>{35a016d3-f463-419d-a727-e35e3acdde64}</Project>
+      <Name>AuthApp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1_AccauntPhoto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

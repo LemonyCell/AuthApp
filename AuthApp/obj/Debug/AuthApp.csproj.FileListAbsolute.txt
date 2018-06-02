@@ -38,3 +38,5 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.application
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.exe.manifest
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.application
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.Core123.dll
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.Core123.pdb

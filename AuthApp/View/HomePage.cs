@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using AuthApp.Models;
+using AuthApp.Core.Models;
+using AuthApp.Core;
 
 namespace AuthApp.View
 {
