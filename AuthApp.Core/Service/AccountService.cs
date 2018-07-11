@@ -12,7 +12,7 @@ namespace AuthApp.Core.Service
 {
     public class AccountService
     {
-        private MySqlConnection conn;
+        private static MySqlConnection conn;
         private string connString;
 
         public ServiceResult<ApplicationUser> Register(RegisterBindingModel model)
@@ -21,8 +21,8 @@ namespace AuthApp.Core.Service
             //check
             try
             {
-                SetConn();
-                conn.Open();
+                //SetConn();
+                //conn.Open();
 
                 if (LoginExist(model.Login))
                 {
@@ -53,7 +53,7 @@ namespace AuthApp.Core.Service
                 serviceResult.Success = false;
             }
 
-            conn.Close();
+            //conn.Close();
 
             return serviceResult;
         }
@@ -65,8 +65,8 @@ namespace AuthApp.Core.Service
 
             try
             {
-                SetConn();
-                conn.Open();
+                //SetConn();
+                //conn.Open();
 
                 if (LoginExist(model.Login))
                 {
@@ -92,7 +92,7 @@ namespace AuthApp.Core.Service
                 serviceResult.Success = false;
             }
 
-            conn.Close();
+            //conn.Close();
 
             return serviceResult;
         }
@@ -129,7 +129,7 @@ namespace AuthApp.Core.Service
         }
 
 
-        void SetConn()
+        public void SetConn()
         {
             if (conn == null)
             {
@@ -137,6 +137,36 @@ namespace AuthApp.Core.Service
                 connString = "SERVER= db4free.net;PORT=3306;DATABASE=users_auth_app;UID=auth_app;PASSWORD=AuthApp123;";
                 conn.ConnectionString = connString;
             }
+
+            conn.Open();
+        }
+
+        public ServiceResult SetConnection()
+        {
+            var result = new ServiceResult();
+            try
+            {
+                if (conn == null)
+                {
+                    conn = new MySqlConnection();
+                    connString = "SERVER= db4free.net;PORT=3306;DATABASE=users_auth_app;UID=auth_app;PASSWORD=AuthApp123;";
+                    conn.ConnectionString = connString;
+                    conn.Open();
+                }
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                result.Error.ErrorCode = 100;
+                result.Error.ErrorDescription = ex.Message;
+                return result;
+            }
+            result.Success = true;
+            return result;
+        }
+
+        public static void CloseConnection()
+        {
+            conn.Close();
         }
 
         ApplicationUser GetUser(AuthBindingModel model)

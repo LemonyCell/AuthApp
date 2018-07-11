@@ -12,6 +12,13 @@ namespace AuthApp.Core.Service
 {
     public class ValidationService
     {
+        private string _patternEmail = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$";
+
+        private string _patternName = "([A-Z]|[a-z]){3,20}?";
+
+        private string _patternPhoneNumber = "[0-9]{12}";
+
         public ServiceResult<ApplicationUser> Validation(RegisterBindingModel model)
         {
             var serviceResult = new ServiceResult<ApplicationUser>();
@@ -57,11 +64,11 @@ namespace AuthApp.Core.Service
             bool isFilled = false;
 
             isFilled = model.Login == "" || model.Password == "";
-
+            //string.IsNullOrWhiteSpace(model.Login);
             return isFilled;
         }
 
-        public ServiceResult FieldValidation(string model)
+        public ServiceResult FieldIsFieldedValidation(string model)
         {
             var serviceResult = new ServiceResult();
 
@@ -87,10 +94,7 @@ namespace AuthApp.Core.Service
         {
             var serviceResult = new ServiceResult();
 
-            string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
-                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$";
-
-            if (!Regex.IsMatch(model, pattern, RegexOptions.IgnoreCase))
+            if (!Regex.IsMatch(model, _patternEmail, RegexOptions.IgnoreCase))
             {
                 serviceResult.Error.ErrorCode = 403;
                 serviceResult.Error.ErrorDescription = "wrong email";
@@ -104,9 +108,7 @@ namespace AuthApp.Core.Service
         public ServiceResult PhoneNumberValidation(string model)
         {
             var serviceResult = new ServiceResult();
-
-            var pattern = "[0-9]{12}";
-            if (!Regex.IsMatch(model, pattern))
+            if (!Regex.IsMatch(model, _patternPhoneNumber))
             {
                 serviceResult.Error.ErrorCode = 398;
                 serviceResult.Error.ErrorDescription = "wrong phone number";
@@ -120,9 +122,7 @@ namespace AuthApp.Core.Service
         public ServiceResult NameValidation(string model)
         {
             var serviceResult = new ServiceResult();
-
-            var pattern = "([A-Z]|[a-z]){3,20}?";
-            if (!Regex.IsMatch(model, pattern))
+            if (!Regex.IsMatch(model, _patternName))
             {
                 serviceResult.Error.ErrorCode = 399;
                 serviceResult.Error.ErrorDescription = "wrong name";

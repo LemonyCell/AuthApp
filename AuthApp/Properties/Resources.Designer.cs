@@ -59,15 +59,5 @@ namespace AuthApp.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1_AccauntPhoto {
-            get {
-                object obj = ResourceManager.GetObject("1_AccauntPhoto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

@@ -19,7 +19,6 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.pdb
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.csprojResolveAssemblyReference.cache
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.View.Login.LoginView.resources
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.View.Register.RegisterView.resources
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.View.Start.resources
@@ -40,3 +39,4 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.application
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.Core123.dll
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\bin\Debug\AuthApp.Core123.pdb
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp\obj\Debug\AuthApp.csprojAssemblyReference.cache

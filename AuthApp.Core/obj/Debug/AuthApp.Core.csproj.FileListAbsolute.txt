@@ -15,8 +15,8 @@ C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси у�
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\bin\Debug\MySql.Data.dll
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\bin\Debug\Google.Protobuf.xml
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\bin\Debug\MySql.Data.xml
-C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core.csprojResolveAssemblyReference.cache
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core.csproj.CoreCompileInputs.cache
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core.csproj.CopyComplete
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core123.dll
 C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core123.pdb
+C:\Users\Vitya\OneDrive\Documents\алгоритмування\C# курси універ\AuthApp\AuthApp.Core\obj\Debug\AuthApp.Core.csprojAssemblyReference.cache

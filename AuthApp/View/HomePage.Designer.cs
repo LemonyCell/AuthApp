@@ -30,7 +30,6 @@ namespace AuthApp.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,9 +42,8 @@ namespace AuthApp.View
             this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UserNameLabel.Location = new System.Drawing.Point(12, 359);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(207, 25);
+            this.UserNameLabel.Size = new System.Drawing.Size(0, 25);
             this.UserNameLabel.TabIndex = 3;
-            this.UserNameLabel.Text = "Анонімний Онаніст";
             this.UserNameLabel.Click += new System.EventHandler(this.UserNameLabel_Click);
             // 
             // ExitButton
@@ -60,7 +58,6 @@ namespace AuthApp.View
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(17, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(246, 293);

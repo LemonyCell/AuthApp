@@ -135,7 +135,7 @@ namespace AuthApp.View.Register
 
         private void ChangeCheckLabel(TextBox label, Label check)
         {
-            var validation = _validationService.FieldValidation(label.Text);
+            var validation = _validationService.FieldIsFieldedValidation(label.Text);
             if (validation.Success)
             {
                 check.ForeColor = Color.Green;

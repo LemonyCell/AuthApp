@@ -49,19 +49,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HYNv/EYr3+7KnqqkJ0yBgI2yDI4MJoyoRiAv7yJOHQI=</dsig:DigestValue>
+        <dsig:DigestValue>METzLweINVc8EV0DNGH9HpE3sct8wuCNj5qb+p3NwKU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AuthApp.Core123.dll" size="12288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AuthApp.Core123.dll" size="12800">
       <assemblyIdentity name="AuthApp.Core123" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZBUTOmzd1lmmIED8ntXAQ1kDwgJiDP+j684+NpjLGOQ=</dsig:DigestValue>
+        <dsig:DigestValue>f/7GHsYcc37YqR59yPjYVlPP/yL4YJna3pVaws4IQgo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -108,15 +108,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>jWVCngsqgsEdPtxOoE7SAK7f6h1++LmE6IqOl8/1R3A=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resources\1_AccauntPhoto.jpg" size="24999">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GkofHBNFQPQ/ZC0E0sx9QInQrz1BxLW7G5ac8kPgFeE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
